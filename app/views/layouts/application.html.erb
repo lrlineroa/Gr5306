@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seguro</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%=link_to 'Home', '/' %>
+    
+    <%- if user_signed_in? %>
+      <%=link_to 'Salir', destroy_user_session_path,method: :delete %>
+    <%else %>
+    <%=link_to 'Iniciar sesion', new_user_session_path %>
+    <%=link_to 'registro', new_user_registration_path %>
+
+    <%end %>
+
+    <%= yield %>
+
+
+  </body>
+</html>
