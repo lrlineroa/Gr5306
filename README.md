@@ -17,7 +17,8 @@ hechos de violencia y/o maltrato, del cual pueden ser victimas las mujeres.
 ### Login de Usuario
 * El usuario se podra registrar usando autenticacion en redes sociales.
 * En el registro soliictara datos basicos de situacion actual del cliente
-*  
+* el reporte se evidencia en la central de la policia
+* 
 
 ### 
 * 
